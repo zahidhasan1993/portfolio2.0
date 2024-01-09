@@ -30,6 +30,11 @@ const Parallax = ({ type }) => {
         initial={{ opacity: 0, scale: 0.5, y: 200 }}
         whileInView={{ opacity: 1, scale: 1, y: 1 }}
         transition={{ delay: 0.5, duration: 2, ease: "easeInOut" }}
+        style={{
+          backgroundImage: `url(${
+            type === "service" ? "/public/planets.png" : "/public/sun.png"
+          })`,
+        }}
       ></motion.div>
       <motion.div
         className="star"
