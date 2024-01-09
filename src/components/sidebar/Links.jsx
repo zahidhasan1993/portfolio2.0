@@ -1,10 +1,6 @@
-
 const Links = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+ 
+  return <div className="links">links</div>;
 };
 
 export default Links;
