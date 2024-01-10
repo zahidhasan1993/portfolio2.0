@@ -65,5 +65,33 @@
   }
   .cardContainer {
     flex: 2;
+    display: flex;
+    max-width: 1366px;
+    margin: auto;
+
+    .card {
+      padding: 50px;
+      border: 0.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 20px;
+      font-weight: normal;
+      // justify-content: center;
+    }
+    button {
+      padding: 10px;
+      background-color: orange;
+      border: none;
+      transition: background-color 0.5s ease-in-out, color 0.5s ease-in;
+
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #000000;
+      color: white;
+      transition-delay: 0.3s;
+    }
   }
 }
