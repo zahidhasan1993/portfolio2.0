@@ -4,10 +4,49 @@ import rhythmImg from "../../../public/school.jpg";
 import luxeImg from "../../../public/hotel.jpg";
 import toyImg from "../../../public/toy.jpg";
 import resumeImg from "../../../public/resume.jpg";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { easeInOut, motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
+
 const SingleSection = ({ item }) => {
-  return <section>{item.title}</section>;
+  // const ref = useRef();
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   // offset: ["start start", "end start"],
+  // });
+  // const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
+
+  return (
+    <section>
+      <div className="container">
+        <div className="wrapper">
+          <motion.div
+            className="imageContainer"
+            initial={{ opacity: 0, y: -300, scale: 0.5 }}
+            whileInView={{ opacity: 1, y: 1, scale: 1 }}
+            transition={{ duration: 1, ease: easeInOut }}
+          >
+            <img src={item.img} alt="" />
+          </motion.div>
+          <motion.div
+            className="textContainer"
+            initial={{ opacity: 0, y: 300, scale: 0.5 }}
+            whileInView={{ opacity: 1, y: 1, scale: 1 }}
+            transition={{ duration: 1, ease: easeInOut }}
+          >
+            <h2>{item.title}</h2>
+            <p>{item.des}</p>
+            <motion.button
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 1, ease: easeInOut }}
+            >
+              See Demo
+            </motion.button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 const Project = () => {
