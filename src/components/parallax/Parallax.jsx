@@ -17,7 +17,7 @@ const Parallax = ({ type }) => {
         whileInView={{ y: 1, scale: 1, opacity: 1 }}
         transition={{ delay: 0.1, ease: "linear", duration: 0.5 }}
       >
-        {type === "service" ? "WHAT I DO" : "what I Did"}
+        {type === "service" ? "WHAT I DO" : "What I Did"}
       </motion.h1>
       <motion.div
         className="mountain"
