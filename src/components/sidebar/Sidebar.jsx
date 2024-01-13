@@ -12,6 +12,10 @@ const Sidebar = () => {
       path: "home",
     },
     {
+      title: "About",
+      path: "about",
+    },
+    {
       title: "Services",
       path: "service",
     },
@@ -19,16 +23,13 @@ const Sidebar = () => {
       title: "Projects",
       path: "portfolio",
     },
-    {
-      title: "About",
-      path: "about",
-    },
+
     {
       title: "Contact",
       path: "contact",
     },
   ];
-  
+
   const variants = {
     open: {
       clipPath: "circle(1200px at 50px 50px)",
