@@ -16,7 +16,7 @@ const Sidebar = () => {
       path: "service",
     },
     {
-      title: "Portfolio",
+      title: "Projects",
       path: "portfolio",
     },
     {

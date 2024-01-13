@@ -54,18 +54,22 @@
           color: gray;
           font-size: 20px;
         }
-        button {
-          padding: 10px;
-          background-color: orange;
-          border: none;
-          border-radius: 10px;
-          width: 200px;
-          cursor: pointer;
-        }
-        button:hover {
-          background-color: black;
-          color: white;
-          transition: background-color 0.5s ease;
+        .buttons {
+            display: flex;
+            gap: 10px;
+          button {
+            padding: 10px;
+            background-color: orange;
+            border: none;
+            border-radius: 10px;
+            width: 175px;
+            cursor: pointer;
+          }
+          button:hover {
+            background-color: black;
+            color: white;
+            transition: background-color 0.5s ease;
+          }
         }
       }
     }
