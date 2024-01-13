@@ -4,7 +4,7 @@ import rhythmImg from "../../../public/school.jpg";
 import luxeImg from "../../../public/hotel.jpg";
 import toyImg from "../../../public/toy.jpg";
 import resumeImg from "../../../public/resume.jpg";
-import { easeInOut, motion, useScroll, useSpring } from "framer-motion";
+import { easeIn, easeInOut, motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
 
 const SingleSection = ({ item }) => {
@@ -28,6 +28,22 @@ const SingleSection = ({ item }) => {
           >
             <h2>{item.title}</h2>
             <p>{item.des}</p>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.1, x: 1 }}
+              whileInView={{ opacity: 1, scale: 1, x: 1 }}
+              transition={{ duration: 2, delay: 0.5, ease: easeIn }}
+              className="skills"
+            >
+              <button>HTML</button>
+              <button>CSS</button>
+              <button>javaScript</button>
+              <button>ReactJs</button>
+              <button>NodeJs</button>
+
+              <button>ExpressJS</button>
+              <button>Firebase</button>
+              <button>TailwindCss</button>
+            </motion.div>
             <div className="buttons">
               <motion.button
                 initial={{ opacity: 0, scale: 0 }}
