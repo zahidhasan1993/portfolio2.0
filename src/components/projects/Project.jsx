@@ -14,8 +14,8 @@ const SingleSection = ({ item }) => {
         <div className="wrapper">
           <motion.div
             className="imageContainer"
-            initial={{ opacity: 0, y: -300, scale: 0.5 }}
-            whileInView={{ opacity: 1, y: 1, scale: 1 }}
+            initial={{ opacity: 0, x: -100, scale: 0.5 }}
+            whileInView={{ opacity: 1, x: 1, scale: 1 }}
             transition={{ duration: 1, ease: easeInOut }}
           >
             <img src={item.img} alt="" />

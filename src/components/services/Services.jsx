@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <motion.div
       className="service"
-      initial={{ opacity: 0, scale: 0.5, x: 500 }}
+      initial={{ opacity: 0, scale: 0.5, x: -300 }}
       whileInView={{ opacity: 1, scale: 1, x: 0 }}
       transition={{ duration: 1 }}
     >
@@ -18,7 +18,7 @@ const Services = () => {
       </motion.div>
       <motion.div
         className="titleContainer"
-        initial={{ opacity: 0, scale: 0.5, y: 500 }}
+        initial={{ opacity: 0, scale: 0.5, y: 300 }}
         whileInView={{ opacity: 1, scale: 1, y: 1 }}
         transition={{ duration: 1, delay: 1, ease: easeInOut }}
       >
@@ -39,7 +39,7 @@ const Services = () => {
       </motion.div>
       <motion.div
         className="cardContainer"
-        initial={{ opacity: 0, scale: 0.5, y: -500 }}
+        initial={{ opacity: 0, scale: 0.5, y: -300 }}
         whileInView={{ opacity: 1, scale: 1, y: 1 }}
         transition={{ duration: 1, delay: 1, staggerChildren: 0.3 }}
       >
@@ -52,7 +52,9 @@ const Services = () => {
             I can build your website in one page website.You can make your dream
             to be real and i am going to make this happen.
           </p>
-          <button>Go</button>
+          <button>
+            <a href="https://toyverse-f253a.web.app/">Go</a>
+          </button>
         </motion.div>
         <motion.div
           className="card"
@@ -63,7 +65,9 @@ const Services = () => {
             For you bigger project where you need a dashboard to track on your
             website i can do this for you.
           </p>
-          <button>Go</button>
+          <button>
+            <a href="https://dineease-15e58.web.app/">Go</a>
+          </button>
         </motion.div>
         <motion.div
           className="card"
@@ -85,7 +89,9 @@ const Services = () => {
             I am offering a full stack dynamic website. It is a challenge for
             me. With MERN Stack i can build your dream projects.
           </p>
-          <button>Go</button>
+          <button>
+            <a href="https://luxeseven-f5a34.web.app/">Go</a>
+          </button>
         </motion.div>
       </motion.div>
     </motion.div>

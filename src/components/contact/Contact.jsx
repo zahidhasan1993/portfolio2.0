@@ -35,7 +35,7 @@ const Contact = () => {
     <motion.div className="contact">
       <motion.div
         className="textContainer"
-        initial={{ opacity: 0, scale: 0.5, x: -300 }}
+        initial={{ opacity: 0, scale: 0.5, x: -100 }}
         whileInView={{ opacity: 1, scale: 1, x: 1 }}
         transition={{ duration: 1, delay: 0.2, ease: easeInOut }}
       >

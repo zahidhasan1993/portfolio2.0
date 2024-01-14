@@ -13,7 +13,7 @@ const Parallax = ({ type }) => {
       }}
     >
       <motion.h1
-        initial={{ opacity: 0, scale: 0.5, y: -500 }}
+        initial={{ opacity: 0, scale: 0.5, y: -300 }}
         whileInView={{ y: 1, scale: 1, opacity: 1 }}
         transition={{ delay: 0.1, ease: "linear", duration: 0.5 }}
       >

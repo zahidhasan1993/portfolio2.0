@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .contact {
   height: 100%;
   max-width: 1366px;
@@ -5,7 +7,10 @@
   display: flex;
   align-items: center;
   gap: 50px;
-
+  @include mobile {
+    flex-direction: column;
+    padding: 20px;
+  }
   .textContainer {
     flex: 1;
     display: flex;
@@ -51,6 +56,9 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
+        @include mobile {
+          margin-bottom: 20px;
+        }
       }
       button:hover {
         background-color: black;

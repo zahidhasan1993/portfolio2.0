@@ -1,24 +1,32 @@
-.navbar{
-    height: 100px;
+@import "../../app.scss";
 
-    .wrapper{
-        max-width: 1366px;
-        margin: auto;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
     }
-    .links{
-        display: flex;
-        gap: 20px;
-        img{
-            height: 24px;
-            width: 24px;
-        }
-        
+  }
+  .links {
+    display: flex;
+    gap: 20px;
+    img {
+      height: 24px;
+      width: 24px;
     }
-    span{
-        font-weight: bold;
+  }
+  span {
+    font-weight: bold;
+    @include mobile {
+      display: none;
     }
+  }
 }
