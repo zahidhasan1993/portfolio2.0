@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="textContainer">
-        <h1>Lets Work Together</h1>
+        <h1>Let&apos;<span>s work</span> together</h1>
         <div className="item">
           <h2>Mail</h2>
           <span>zahidhasan19932023@gmail.com</span>
