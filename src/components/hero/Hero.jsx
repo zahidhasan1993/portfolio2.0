@@ -51,13 +51,21 @@ const Hero = () => {
             MERN Stack Web Developer & Designer
           </motion.h1>
           <motion.div className="buttons" variants={textVariant}>
-            <motion.button variants={textVariant}>
-              See the latest works
+            <motion.button
+              variants={textVariant}
+              whileHover={{ backgroundColor: "#ffffff", color: "black" }}
+            >
+              <motion.a href="https://github.com/zahidhasan1993">
+                Check Out My Github
+              </motion.a>
             </motion.button>
-            <motion.button variants={textVariant}>
-              <a href="https://drive.google.com/file/d/1EOOOAgQ4vYU0LZnw1FPWpKazYAwIq9PS/view?usp=sharing">
+            <motion.button
+              variants={textVariant}
+              whileHover={{ backgroundColor: "#ffffff", color: "black" }}
+            >
+              <motion.a href="https://drive.google.com/file/d/1EOOOAgQ4vYU0LZnw1FPWpKazYAwIq9PS/view?usp=sharing">
                 Download Resume
-              </a>
+              </motion.a>
             </motion.button>
           </motion.div>
           <motion.img

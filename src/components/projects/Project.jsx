@@ -31,7 +31,7 @@ const SingleSection = ({ item }) => {
             <motion.div
               initial={{ opacity: 0, scale: 0.1, x: 1 }}
               whileInView={{ opacity: 1, scale: 1, x: 1 }}
-              transition={{ duration: 2, delay: 0.5, ease: easeIn }}
+              transition={{ duration: 1, delay: 0.5, ease: easeIn }}
               className="skills"
             >
               <button>HTML</button>
