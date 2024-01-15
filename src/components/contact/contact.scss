@@ -13,30 +13,36 @@
     padding: 20px;
     transition: none !important;
   }
+
   .textContainer {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 40px;
+
     @include mobile {
       padding-top: 70px;
       flex: 0;
       width: 100%;
       gap: 10px;
     }
+
     h1 {
       font-size: 100px;
       line-height: 88px;
+
       @include mobile {
         font-size: 50px;
         line-height: 45px;
       }
     }
+
     span {
       // font-size: 20px;
       color: orange;
       //   font-weight: 300;
     }
+
     .item {
       @include mobile {
         font-size: 15px;
@@ -44,8 +50,10 @@
       }
     }
   }
+
   .formContainer {
     flex: 1;
+
     @include mobile {
       flex: 0;
       width: 100%;
@@ -53,6 +61,7 @@
       transform: none !important;
       margin-bottom: 50px;
     }
+
     form {
       display: flex;
       flex-direction: column;
@@ -65,6 +74,7 @@
         color: white;
         border-radius: 5px;
       }
+
       textarea {
         padding: 20px;
         background-color: transparent;
@@ -72,6 +82,7 @@
         color: white;
         border-radius: 5px;
       }
+
       button {
         padding: 10px;
         background-color: orange;
@@ -81,10 +92,12 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
+
         @include mobile {
           margin-bottom: 20px;
         }
       }
+
       button:hover {
         background-color: black;
         color: white;
