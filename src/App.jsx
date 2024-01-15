@@ -28,6 +28,7 @@ const App = () => {
       <Project></Project>
       <section id="contact">
         <Contact></Contact>
+       
       </section>
     </div>
   );
