@@ -69,6 +69,7 @@
         @include mobile {
           transform: none !important;
           gap: 20px;
+          padding: 20px;
         }
         h2 {
           font-size: 72px;
@@ -96,6 +97,9 @@
             border-radius: 10px;
             width: 175px;
             cursor: pointer;
+            @include mobile {
+              width: 100px;
+            }
           }
           button:hover {
             background-color: black;
