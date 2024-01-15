@@ -1,11 +1,11 @@
 import "./service.scss";
 import { easeInOut, motion } from "framer-motion";
-
+import peopleImg from "../../../public/people.webp";
 const Services = () => {
   return (
     <motion.div
       className="service"
-      initial={{ opacity: 0, scale: 0.5, x: -300 }}
+      initial={{ opacity: 0, scale: 0.5, x: -100 }}
       whileInView={{ opacity: 1, scale: 1, x: 0 }}
       transition={{ duration: 1 }}
     >
@@ -23,7 +23,7 @@ const Services = () => {
         transition={{ duration: 1, delay: 1, ease: easeInOut }}
       >
         <div className="title">
-          <img src="/public/people.webp" alt="" />
+          <img src={peopleImg} alt="" />
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
           </h1>
