@@ -5,8 +5,8 @@ const About = () => {
     <div className="about">
       <div className="wrapper">
         <motion.div
-          initial={{ opacity: 0, scale: 0.2, y: -300 }}
-          whileInView={{ opacity: 1, scale: 1, y: 1 }}
+          initial={{ opacity: 0, scale: 0.2, x: -200 }}
+          whileInView={{ opacity: 1, scale: 1, x: 1 }}
           transition={{ duration: 1, delay: 0.2, ease: easeInOut }}
           className="textContainer"
         >

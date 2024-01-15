@@ -51,6 +51,7 @@
       gap: 10px;
       @include mobile {
         flex: 0;
+        transform: none !important;
       }
       h2 {
         text-align: center;
